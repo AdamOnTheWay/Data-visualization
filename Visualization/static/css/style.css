@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #ded5d5;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.photoBoxContainerFirst{
+	width: 33.3333333333333333333%;
+	height: 300px;
+	float: left;
+	text-align: center;
+	line-height: 300px;
+}
+.photoBoxFirst{
+	width: 95%;
+	height: 280px;
+	margin: 10px auto;
+}
+.photoBoxContainerSecond{
+	width: 100%;
+	height: 300px;
+	float: left;
+}
+#secondOne{
+	width: 98.333333333333333333%;
+	height: 280px;
+	margin: 10px auto;
+}
+.photoBoxContainerThird{
+	width: 50%;
+	height: 300px;
+	float: left;
+	text-align: center;
+	line-height: 300px;
+}
+.photoBoxThird{
+	width: 96.66666666666666666%;
+	height: 280px;
+	margin: 10px auto;
+}

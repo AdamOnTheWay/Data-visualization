@@ -19,5 +19,5 @@ from visualApp import views as visualAppViews
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^home/', visualAppViews.Hello_world_test),
+    url(r'^', visualAppViews.Hello_world_test),
 ]

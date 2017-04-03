@@ -16,7 +16,7 @@ function chartFirstOne(){
             backgroundColor: 'rgb(144, 237, 125)'
         },
         title: {
-            text: '2014 某网站各浏览器浏览量占比'
+            text: ''
         },
         tooltip: {
             headerFormat: '{series.name}<br>',
@@ -62,7 +62,7 @@ function chartFirstTwo(){
             backgroundColor: 'rgb(247, 163, 92)'
         },
         title: {
-            text: '按性别划分的水果消费总量'
+            text: ''
         },
         xAxis: {
             categories: ['苹果', '橘子', '梨', '葡萄', '香蕉']
@@ -111,7 +111,7 @@ function chartFirstThree(){
         backgroundColor: 'rgb(124, 181, 236)'
         },
     title: {
-        text: '不同城市的月平均气温',
+        text: '',
         x: -20
     },
     subtitle: {
@@ -163,7 +163,7 @@ function chartSecondOne(){
             backgroundColor: '#8085e8'
         },
         title: {
-            text: '全球各大洲人口增长历史及预测'
+            text: ''
         },
         subtitle: {
             text: '数据来源: Wikipedia.org'
@@ -222,56 +222,57 @@ function chartSecondOne(){
 function chartThirdOne(){
 	$('#thirdOne').highcharts({
         chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: 0,
-            plotShadow: false,
-            backgroundColor: 'rgb(255, 239, 255)'
+            type: 'column',
+            options3d: {
+                enabled: true,
+                alpha: 15,
+                beta: 15,
+                viewDistance: 25,
+                depth: 40
+            },
+            marginTop: 80,
+            marginRight: 40,
+			backgroundColor: 'rgb(228, 211, 84)'
         },
         title: {
-            text: '浏览器<br>占比',
-            align: 'center',
-            verticalAlign: 'middle',
-            y: 50
+            text: ''
+        },
+        xAxis: {
+            categories: ['苹果', '橘子', '梨', '葡萄', '香蕉']
+        },
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: '水果数量'
+            }
         },
         tooltip: {
-            headerFormat: '{series.name}<br>',
-            pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+            headerFormat: '<b>{point.key}</b><br>',
+            pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: {point.y} / {point.stackTotal}'
         },
         plotOptions: {
-            pie: {
-                dataLabels: {
-                    enabled: true,
-                    distance: -50,
-                    style: {
-                        fontWeight: 'bold',
-                        color: 'white',
-                        textShadow: '0px 1px 2px black'
-                    }
-                },
-                startAngle: -90,
-                endAngle: 90,
-                center: ['50%', '75%']
+            column: {
+                stacking: 'normal',
+                depth: 40
             }
         },
         series: [{
-            type: 'pie',
-            name: '浏览器占比',
-            innerSize: '50%',
-            data: [
-                ['Firefox',   45.0],
-                ['IE',       26.8],
-                ['Chrome', 12.8],
-                ['Safari',    8.5],
-                ['Opera',     6.2],
-                {
-                    name: '其他',
-                    y: 0.7,
-                    dataLabels: {
-                        // 数据比较少，没有空间显示数据标签，所以将其关闭
-                        enabled: false
-                    }
-                }
-            ]
+            name: '小张',
+            data: [5, 3, 4, 7, 2],
+            stack: 'male'
+        }, {
+            name: '小王',
+            data: [3, 4, 4, 2, 5],
+            stack: 'male'
+        }, {
+            name: '小彭',
+            data: [2, 5, 6, 2, 1],
+            stack: 'female'
+        }, {
+            name: '小潘',
+            data: [3, 0, 4, 4, 3],
+            stack: 'female'
         }]
     });
 }
@@ -282,7 +283,7 @@ function chartThirdTwo(){
             backgroundColor: 'rgb(145, 232, 225)'
         },
         title: {
-            text: '图表变换'
+            text: ''
         },
         subtitle: {
             text: '普通的'

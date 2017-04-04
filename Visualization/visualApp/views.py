@@ -5,4 +5,4 @@ from django.shortcuts import HttpResponse
 
 def Hello_world_test(request):
 	#return HttpResponse("Hello,world")
-	return render(request,"hello.html")
+	return render(request,"index.html")

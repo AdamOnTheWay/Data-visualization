@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8" />
+		<title>BackEnd Test</title>
+	</head>
+	<body>
+		<p>Please input</P>
+		<form method = "post" action = "/backend/">
+			<input type = "text" name = "username" />
+			<input type = "password" name = "password" />
+			<input type = "submit" value = "Confirm" />
+		</form>
+		<p>Show area</p>
+		{% for index in data %}
+			<label>{{index.user}}<span>{{index.pwd}}</span></label>
+		{% endfor %}
+	</body>
+</html>

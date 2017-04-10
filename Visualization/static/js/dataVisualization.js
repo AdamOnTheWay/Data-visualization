@@ -160,7 +160,7 @@ function chartSecondOne(){
 	 $('#secondOne').highcharts({
         chart: {
             type: 'area',
-            backgroundColor: '#8085e8'
+            backgroundColor: 'rgb(145, 232, 225)'
         },
         title: {
             text: ''
@@ -280,13 +280,13 @@ function chartThirdOne(){
 function chartThirdTwo(){
 	var chart = Highcharts.chart('thirdTwo', {
 		chart: {
-            backgroundColor: 'rgb(145, 232, 225)'
+            backgroundColor: 'rgb(241, 92, 128)'  //#8085e8
         },
         title: {
             text: ''
         },
         subtitle: {
-            text: '普通的'
+            text: ''
         },
         xAxis: {
             categories: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']
@@ -317,7 +317,7 @@ function chartThirdTwo(){
                 polar: false
             },
             subtitle: {
-                text: '反转'
+                text: ''
             }
         });
     });
@@ -328,7 +328,7 @@ function chartThirdTwo(){
                 polar: true
             },
             subtitle: {
-                text: '极地图'
+                text: ''
             }
         });
     });

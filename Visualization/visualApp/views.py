@@ -11,9 +11,10 @@ def Hello_world_test(request):
 def Back_end_test(request):
 	return render(request,"back_end_test.html")
 	
-		
+	
 all_user_info = []
-		
+	
+	
 def backend(request):
 	if request.method == 'POST':
 		username = request.POST.get('username','noName')

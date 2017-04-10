@@ -115,7 +115,7 @@ function chartFirstThree(){
         x: -20
     },
     subtitle: {
-        text: '数据来源: WorldClimate.com',
+        text: '',
         x: -20
     },
     xAxis: {
@@ -166,7 +166,7 @@ function chartSecondOne(){
             text: ''
         },
         subtitle: {
-            text: '数据来源: Wikipedia.org'
+            text: ''
         },
         xAxis: {
             categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],

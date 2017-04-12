@@ -41,3 +41,9 @@ body{
 	height: 280px;
 	margin: 10px auto;
 }
+.footer{
+	width:100%;
+	text-align:center;
+	margin-bottom:10px;
+	text-decoration:none;
+}
